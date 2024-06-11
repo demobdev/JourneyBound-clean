@@ -12,6 +12,8 @@ function Banner() {
         autoPlay
         muted
         loop
+        playsInline
+        controls={false} // Ensure this is set to false
         className="fullscreen-bg__video"
       >
         <source src={BannerVideo} type="video/mp4" />
