@@ -1,7 +1,7 @@
 import React from "react";
 import BackgroundImage from "../assets/images/why-journey-bound.png";
 import { Container } from "react-bootstrap";
-import VideoBanner from "../assets/videos/TheOpening.mov";
+import VideoBanner from "../assets/videos/TheOpening.mp4"; 
 import { Link } from "react-router-dom";
 import "../assets/css/global-style.css";
 import "../assets/css/style.css";
