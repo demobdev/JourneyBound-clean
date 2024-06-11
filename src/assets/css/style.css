@@ -229,6 +229,26 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
   border-radius: 10px; /* Rounded corners */
 }
+.hero-logo {
+  margin-top: 20px; /* Default value */
+}
+
+@media (max-width: 767px) {
+  .hero-logo {
+    margin-top: 90px; /* Increase this value to move the logo down on mobile devices */
+  }
+}
+
+.hero-text-wrapper {
+  margin-top: 125px; /* Adjust this value to move the text further down */
+}
+
+.banner-main .title {
+  font-size: 28px;
+  line-height: 42px;
+  letter-spacing: 0.02em;
+  margin-bottom: 0;
+}
 
 .jb-logo {
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5)); /* Drop shadow */
@@ -289,27 +309,6 @@ a:hover {
   width: 100%;
   height: 100%;
   overflow: hidden;
-}
-
-.hero-logo {
-  margin-top: 20px; /* Default value */
-}
-
-@media (max-width: 767px) {
-  .hero-logo {
-    margin-top: 50px; /* Increase this value to move the logo down on mobile devices */
-  }
-}
-
-.hero-text-wrapper {
-  margin-top: 125px; /* Adjust this value to move the text further down */
-}
-
-.banner-main .title {
-  font-size: 28px;
-  line-height: 42px;
-  letter-spacing: 0.02em;
-  margin-bottom: 0;
 }
 
 .banner-main .shortTitle {
