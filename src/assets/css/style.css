@@ -144,55 +144,55 @@ a:hover {
 
 @media (min-width: 768px) {
   .head-h1 {
-      font-size: 36px;
-      line-height: 44px;
+    font-size: 36px;
+    line-height: 44px;
   }
 
   .head-h2 {
-      font-size: 28px;
-      line-height: 36px;
+    font-size: 28px;
+    line-height: 36px;
   }
 
   .head-h3 {
-      font-size: 24px;
-      line-height: 32px;
+    font-size: 24px;
+    line-height: 32px;
   }
 
   .head-h4 {
-      font-size: 20px;
-      line-height: 32px;
+    font-size: 20px;
+    line-height: 32px;
   }
 
   .head-h5 {
-      font-size: 20px;
-      line-height: 28px;
+    font-size: 20px;
+    line-height: 28px;
   }
 
   .head-h6 {
-      font-size: 18px;
-      line-height: 26px;
+    font-size: 18px;
+    line-height: 26px;
   }
 }
 
 @media (min-width: 992px) {
   .head-h1 {
-      font-size: 40px;
-      line-height: 48px;
+    font-size: 40px;
+    line-height: 48px;
   }
 
   .head-h2 {
-      font-size: 32px;
-      line-height: 44px;
+    font-size: 32px;
+    line-height: 44px;
   }
 
   .head-h3 {
-      font-size: 28px;
-      line-height: 36px;
+    font-size: 28px;
+    line-height: 36px;
   }
 
   .head-h4 {
-      font-size: 24px;
-      line-height: 36px;
+    font-size: 24px;
+    line-height: 36px;
   }
 }
 
@@ -222,6 +222,31 @@ a:hover {
   z-index: 0;
 }
 
+.logo-wrapper {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.jb-logo {
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5)); /* Drop shadow */
+  max-width: 100%;
+  height: auto;
+}
+
+.title {
+  margin-top: 20px;
+  color: #fff; /* Ensure text is visible against the background */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow */
+}
+
+.brand-logo .shortTitle {
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow */
+}
+
 @media (max-width: 991px) {
   .banner-main .jb-logo {
     max-width: 200px;  /* Size for smaller screens */
@@ -238,27 +263,11 @@ a:hover {
   }
 }
 
-.bg-video {
-  transform: scale(1.4);
-  z-index: -1;
-  filter: opacity(0.8);
-}
-
 .banner-main .bg-video {
   filter: opacity(0.6);
   object-fit: cover; /* Ensure the video covers the entire area */
   width: 100%;       /* Ensure the video takes full width */
   height: 100%;      /* Ensure the video takes full height */
-}
-
-.video-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  z-index: -1111;
 }
 
 .fullscreen-bg__video {
@@ -1559,3 +1568,4 @@ color: #FFFFFF; /* Initial state color */
 .highlight-link:hover h6 {
 color: #D7BFFF; /* Neon purple color for hover */
 }
+
