@@ -4,15 +4,16 @@
   position: sticky;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust the RGBA values for desired transparency */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
   padding: 20px 0;
-  z-index: 99;
-  transition: background-color 0.3s ease; /* Add transition for smooth background change */
+  z-index: 1000; /* Ensure header is above the video */
+  transition: background-color 0.3s ease; /* Smooth background change */
 }
 
 .navbar .container-lg {
   max-width: 1278px;
 }
+
 .navbar .nav-main-menu {
   width: 100%;
 }
