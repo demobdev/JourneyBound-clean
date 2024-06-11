@@ -13,33 +13,34 @@ function Banner() {
         muted
         loop
         playsInline
-        controls={false}
+        controls={false} // Ensure this is set to false
         className="fullscreen-bg__video"
-        style={{ zIndex: -1 }} // Ensure video is behind the header
       >
         <source src={BannerVideo} type="video/mp4" />
       </video>
       <Container fluid="lg" className="d-flex flex-column align-items-center justify-content-center text-center">
-        <Figure className="mb-5">
+        <Figure className="mb-5 hero-logo">
           <Image src={JBWhiteImage} className="image jb-logo" />
         </Figure>
-        <h1 className="title font-family-AG">
-          a web3 psychedelic experience
-        </h1>
-        <Row className="brand-logo align-items-center justify-content-between mt-4 w-100">
-          <Col className="text-center">
-            <h4 className="shortTitle">on</h4>
-            <Figure className="mb-0">
-              <Image src={BaseLogo} className="image1" />
-            </Figure>
-          </Col>
-          <Col className="text-center">
-            <h4 className="shortTitle">by the</h4>
-            <Figure className="mb-0">
-              <Image src={AtriumLogo} className="image2" />
-            </Figure>
-          </Col>
-        </Row>
+        <div className="hero-text-wrapper">
+          <h1 className="title font-family-AG">
+            a web3 psychedelic experience
+          </h1>
+          <Row className="brand-logo align-items-center justify-content-between mt-4 w-100">
+            <Col className="text-center">
+              <h4 className="shortTitle">on</h4>
+              <Figure className="mb-0">
+                <Image src={BaseLogo} className="image1" />
+              </Figure>
+            </Col>
+            <Col className="text-center">
+              <h4 className="shortTitle">by the</h4>
+              <Figure className="mb-0">
+                <Image src={AtriumLogo} className="image2" />
+              </Figure>
+            </Col>
+          </Row>
+        </div>
       </Container>
     </section>
   );
