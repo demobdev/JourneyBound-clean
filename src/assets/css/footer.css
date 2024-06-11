@@ -1,0 +1,162 @@
+/* Footer Styling */
+
+.footer {
+  background-color: #000;
+  padding: 5px;
+}
+
+.footer .container-lg {
+  max-width: 1399px;
+  border: 2px solid #ffffff;
+  border-radius: 17px;
+  padding: 20px 6%;
+}
+
+.footer-logo a {
+  display: inline-block;
+}
+
+.footer-logo a img {
+  width: 100%;
+  max-width: 120px;
+}
+
+.footer .head-h4 {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  border-top: 2px solid #949494;
+  padding-top: 20px;
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
+
+.footer .title {
+  font-family: "Avenir";
+  font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+  margin-bottom: 0;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.footer .footer-menu {
+  margin-bottom: 20px;
+    padding-bottom: 10px;
+  border-bottom: 2px solid #949494;
+}
+
+.footer .footer-menu li a {
+  font-family: "Avenir";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  text-decoration: underline;
+  display: inline-block;
+  color: #d1d1d1;
+}
+
+.social-media-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 5%;
+}
+
+.social-media-list li a {
+  font-size: 24px;
+  color: #fff;
+  display: inline-block;
+}
+
+.fa-x-twitter::before, fa-instagram::before {
+  font-size: 40px;
+}
+
+.fa-discord::before {
+  font-size: 40px;
+}
+
+.fa-instagram::before {
+  font-size: 40px;
+}
+
+
+.copyright .text {
+  font-family: "Avenir";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 0;
+  color: #56535d;
+  /* text-align: center; */
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding: 36px 20px;
+  }
+  .footer .footer-menu {
+    margin: 0;
+    border: 0;
+    padding: 0px 40px 20px;
+  }
+  .footer .head-h4 {
+    font-size: 22px;
+    line-height: 32px;
+    border-bottom: 2px solid #949494;
+    border-top: 0;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    padding-top: 0;
+    margin-top: 0;
+  }
+  .footer .menu-column {
+    border-bottom: 2px solid #949494;
+  }
+  .footer .container-lg {
+    padding: 25px;
+  }
+  .footer .title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .footer .head-h4 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .footer .footer-menu li a {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .social-media-list {
+    gap: 10%;
+  }
+
+  .social-media-list li a {
+    font-size: 40px;
+  }
+
+  .copyright {
+    padding: 16px 0 0;
+  }
+
+  .copyright .text {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .footer-logo a img {
+    max-width: 140px;
+  }
+}
+
+@media (min-width: 991px) {
+  .footer-logo a img {
+    max-width: 180px;
+    position: relative;
+    top: -30px;
+  }
+}
