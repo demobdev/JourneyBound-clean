@@ -1,7 +1,7 @@
 import React from "react";
 import BackgroundImage from "../assets/images/why-journey-bound.png";
 import { Container } from "react-bootstrap";
-import VideoBanner from "../assets/videos/TheOpening.mp4"; 
+import VideoBanner from "../assets/videos/TheOpening.mp4";
 import { Link } from "react-router-dom";
 import "../assets/css/global-style.css";
 import "../assets/css/style.css";
@@ -19,7 +19,6 @@ function WhyJourneyBound() {
       <div className="video-container">
         <video autoPlay loop muted playsInline className="fullscreen-bg__video">
           <source src={VideoBanner} type="video/mp4" />
-          Your browser does not support the video tag.
         </video>
       </div>
       <Container fluid="lg">
