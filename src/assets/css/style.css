@@ -291,7 +291,9 @@ a:hover {
   overflow: hidden;
 }
 
-
+.hero-text-wrapper {
+  margin-top: 50px; /* Adjust this value to move the text further down */
+}
 
 .banner-main .title {
   font-size: 28px;
