@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Image, Ratio } from "react-bootstrap";
+import { Container, Row, Col, Image } from "react-bootstrap";
 import JourneyboundTriangleImage from "../assets/images/triangle-down-bg-image.png";
 import DiscordImage from "../assets/images/discord-logo.png";
 import BlueBaseLogo from "../assets/images/blue-base-logo.png";
@@ -51,11 +51,10 @@ function GuidedServicesLeftContent() {
             </div>
           </Col>
           <Col lg={6} className="p-0 overflow-hidden video-column">
-            {/* <Ratio aspectRatio={"1x1"} className="h-100 recieve-shamon"> */}
             <video
-              autoPlay
               muted
               loop
+              playsInline
               className="bg-video"
               style={{
                 width: "100%",
@@ -67,7 +66,6 @@ function GuidedServicesLeftContent() {
             >
               <source src={Video} type="video/mp4" />
             </video>
-            {/* </Ratio> */}
           </Col>
         </Row>
       </Container>

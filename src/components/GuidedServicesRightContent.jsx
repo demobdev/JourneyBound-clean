@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Image, Ratio } from "react-bootstrap";
+import { Container, Row, Col, Image } from "react-bootstrap";
 import BrainBrewLogo from "../assets/images/brain-brew-logo.png";
 import ContentBgImage from "../assets/images/guided-services-bg.png";
 import Video from "../assets/videos/guided-services-video.mp4";
@@ -27,9 +27,9 @@ const GuidedServicesRightContent = () => {
               Guided Services
             </h2>
             <video
-              autoPlay
               muted
               loop
+              playsInline
               className="bg-video object-contain"
               style={{
                 width: "100%",
