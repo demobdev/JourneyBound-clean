@@ -17,7 +17,7 @@ function WhyJourneyBound() {
   return (
     <section className="why-journey-bound text-center py-5" style={SectionBackgroundImage}>
       <div className="video-container">
-        <video autoPlay loop muted className="fullscreen-bg__video">
+        <video autoPlay loop muted playsInline className="fullscreen-bg__video" controls={false}>
           <source src={VideoBanner} type="video/mp4" />
         </video>
       </div>
