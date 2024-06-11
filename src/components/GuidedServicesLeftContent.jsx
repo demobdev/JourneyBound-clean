@@ -52,9 +52,9 @@ function GuidedServicesLeftContent() {
           </Col>
           <Col lg={6} className="p-0 overflow-hidden video-column">
             <video
+              autoPlay
               muted
               loop
-              playsInline
               className="bg-video"
               style={{
                 width: "100%",
@@ -63,6 +63,7 @@ function GuidedServicesLeftContent() {
                 opacity: "0.6",
                 transform: "scaleX(1)",
               }}
+              playsInline
             >
               <source src={Video} type="video/mp4" />
             </video>

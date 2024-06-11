@@ -27,9 +27,9 @@ const GuidedServicesRightContent = () => {
               Guided Services
             </h2>
             <video
+              autoPlay
               muted
               loop
-              playsInline
               className="bg-video object-contain"
               style={{
                 width: "100%",
@@ -38,13 +38,14 @@ const GuidedServicesRightContent = () => {
                 opacity: "0.6",
                 minHeight: "552px",
               }}
+              playsInline
             >
               <source src={Video} type="video/mp4" />
             </video>
           </Col>
           <Col
             lg={6}
-            className=" scrollable-content"
+            className="scrollable-content"
             style={contentBackgroundImage}
           >
             <div

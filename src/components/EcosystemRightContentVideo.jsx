@@ -30,9 +30,9 @@ function RightContentVideo() {
                 Ecosystem
               </h2>
               <video
+                autoPlay
                 muted
                 loop
-                playsInline
                 className="bg-video"
                 style={{
                   width: "88%",
@@ -41,6 +41,7 @@ function RightContentVideo() {
                   opacity: "0.6",
                   minHeight: "552px",
                 }}
+                playsInline
               >
                 <source src={BgVideo} type="video/mp4" />
               </video>
