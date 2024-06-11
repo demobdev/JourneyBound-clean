@@ -14,11 +14,14 @@ function WhyJourneyBound() {
     backgroundSize: "cover",
   };
 
+  console.log("WhyJourneyBound component rendered");
+
   return (
     <section className="why-journey-bound text-center py-5" style={SectionBackgroundImage}>
       <div className="video-container">
         <video autoPlay loop muted playsInline className="fullscreen-bg__video">
           <source src={VideoBanner} type="video/mov" />
+          Your browser does not support the video tag.
         </video>
       </div>
       <Container fluid="lg">
