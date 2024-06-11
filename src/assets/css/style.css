@@ -291,6 +291,16 @@ a:hover {
   overflow: hidden;
 }
 
+.hero-logo {
+  margin-top: 20px; /* Default value */
+}
+
+@media (max-width: 767px) {
+  .hero-logo {
+    margin-top: 50px; /* Increase this value to move the logo down on mobile devices */
+  }
+}
+
 .hero-text-wrapper {
   margin-top: 125px; /* Adjust this value to move the text further down */
 }
