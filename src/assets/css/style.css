@@ -280,7 +280,7 @@ a:hover {
   .banner-main .jb-logo {
     max-width: 200px !important;  /* Size for smaller screens */
     width: 100% !important;       /* Ensure it scales correctly */
-    margin-bottom: 1.6rem !important;
+    margin-bottom: -8.6rem !important;
   }
 
   .banner-main .title {
