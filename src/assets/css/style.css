@@ -1223,6 +1223,7 @@ z-index: -1;
     rgba(0, 0, 0, 0.6) 0.02%,
     rgba(0, 0, 0, 0) 157.58%
   );
+  overflow: hidden; /* Ensures any overflow is hidden */
 }
 
 .ecosystem-right-content-video .bg-video {
@@ -1230,12 +1231,13 @@ z-index: -1;
   height: auto;
   object-fit: cover; /* Ensure the video covers the entire area */
   z-index: -1;
+  transform: translateX(-10px) scaleX(1); /* Move the video 10px to the left */
 }
 
 .scrollable-content {
   max-height: 720px;
   overflow: auto;
-  --webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch;
 }
 
 .scrollable-content::-webkit-scrollbar {
@@ -1262,13 +1264,13 @@ z-index: -1;
 
 @media (max-width: 1366px) {
   .ecosystem-right-content-video .bg-video {
-    transform: scaleX(1.2);
+    transform: translateX(-10px) scaleX(1.2); /* Move the video 10px to the left and scale it */
   }
 }
 
 @media (max-width: 992px) {
   .ecosystem-right-content-video .bg-video {
-    transform: scaleX(1);
+    transform: translateX(-10px) scaleX(1); /* Move the video 10px to the left */
   }
 }
 
