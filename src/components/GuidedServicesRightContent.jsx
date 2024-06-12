@@ -30,11 +30,10 @@ const GuidedServicesRightContent = () => {
               autoPlay
               muted
               loop
-              className="bg-video object-contain"
+              className="bg-video"
               style={{
                 width: "100%",
                 height: "100%",
-                objectFit: "cover",
                 opacity: "0.6",
                 minHeight: "552px",
               }}
