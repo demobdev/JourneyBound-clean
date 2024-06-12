@@ -232,7 +232,7 @@ a:hover {
 }
 
 .hero-text-wrapper {
-  margin-top: 250px; /* Adjust this value to move the text further down */
+  margin-top: 400px; /* Adjust this value to move the text further down */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -261,7 +261,7 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 600px;
+  max-width: 800px; /* Increased max-width to space logos further apart */
 }
 
 .brand-logo .shortTitle {
