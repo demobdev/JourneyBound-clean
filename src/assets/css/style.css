@@ -259,7 +259,7 @@ a:hover {
 .brand-logo {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px; /* Adjust the gap as needed */
+  gap: 60px; /* Adjust the gap as needed */
   width: 100%;
   max-width: 1400px; /* Adjust max-width to control the spacing between logos */
 }
