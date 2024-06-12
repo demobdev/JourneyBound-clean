@@ -259,9 +259,9 @@ a:hover {
 .brand-logo {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 80px; /* Adjust the gap as needed */
+  grid-gap: 80px; /* Gap between columns */
   width: 100%;
-  max-width: 2400px; /* Adjust max-width to control the spacing between logos */
+  max-width: 1400px; /* Adjust max-width to control the spacing between logos */
 }
 
 .brand-logo .logo-container {
@@ -289,8 +289,7 @@ a:hover {
   }
 
   .brand-logo {
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: 1fr; /* Stack logos vertically on smaller screens */
     gap: 10px; /* Reduce gap for smaller screens */
   }
 
@@ -354,6 +353,7 @@ a:hover {
   letter-spacing: 0.02em;
   text-align: center;
 }
+
 
 
 .h3-mobile {
