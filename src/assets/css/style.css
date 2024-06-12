@@ -6,8 +6,8 @@
 }
 
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   font-family: 'Avenir', sans-serif;
   box-sizing: border-box;
 }
@@ -20,14 +20,6 @@ body {
 
 img {
   max-width: 100%;
-}
-
-.object-fit-cover {
-  object-fit: cover;
-}
-
-.object-position-center {
-  object-position: center;
 }
 
 a {
@@ -58,6 +50,7 @@ a:hover {
   padding-right: 16px;
 }
 
+/* Typography */
 .head-h1 {
   font-size: 32px;
   line-height: 40px;
@@ -88,16 +81,7 @@ a:hover {
   line-height: 26px;
 }
 
-.paragraph-text {
-  font-size: 16px;
-  line-height: 26px;
-}
-
-.paragraph-text-sm {
-  font-size: 14px;
-  line-height: 24px;
-}
-
+/* Utilities */
 .z-index-0 {
   z-index: 0;
 }
@@ -127,7 +111,6 @@ a:hover {
 }
 
 .text-list li {
-  font-family: 'Avenir', sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -142,60 +125,7 @@ a:hover {
   letter-spacing: 0.01em;
 }
 
-@media (min-width: 768px) {
-  .head-h1 {
-    font-size: 36px;
-    line-height: 44px;
-  }
-
-  .head-h2 {
-    font-size: 28px;
-    line-height: 36px;
-  }
-
-  .head-h3 {
-    font-size: 24px;
-    line-height: 32px;
-  }
-
-  .head-h4 {
-    font-size: 20px;
-    line-height: 32px;
-  }
-
-  .head-h5 {
-    font-size: 20px;
-    line-height: 28px;
-  }
-
-  .head-h6 {
-    font-size: 18px;
-    line-height: 26px;
-  }
-}
-
-@media (min-width: 992px) {
-  .head-h1 {
-    font-size: 40px;
-    line-height: 48px;
-  }
-
-  .head-h2 {
-    font-size: 32px;
-    line-height: 44px;
-  }
-
-  .head-h3 {
-    font-size: 28px;
-    line-height: 36px;
-  }
-
-  .head-h4 {
-    font-size: 24px;
-    line-height: 36px;
-  }
-}
-
+/* Divider */
 .divider {
   box-shadow: 0px 0px 19px 2px #7D2CFEF2;
   width: 100%;
@@ -233,8 +163,8 @@ a:hover {
 }
 
 .banner-main .title {
-  font-size: 24px !important; /* Decreased from 28px */
-  line-height: 36px !important; /* Decreased from 42px */
+  font-size: 24px;
+  line-height: 36px;
   letter-spacing: 0.02em;
   margin-bottom: 20px;
 }
@@ -246,16 +176,16 @@ a:hover {
 }
 
 .title {
-  color: #fff !important; /* Ensure text is visible against the background */
+  color: #fff; /* Ensure text is visible against the background */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow */
 }
 
 .brand-logo {
-  display: grid !important;
-  grid-template-columns: 1fr 1fr !important;
-  gap: 800px !important; /* Gap between columns */
-  width: 100% !important;
-  max-width: 2400px !important; /* Adjust max-width to control the spacing between logos */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 800px; /* Gap between columns */
+  width: 100%;
+  max-width: 2400px; /* Adjust max-width to control the spacing between logos */
 }
 
 .brand-logo .logo-container {
@@ -265,7 +195,7 @@ a:hover {
 }
 
 .brand-logo .shortTitle {
-  color: #fff !important;
+  color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow */
   margin-bottom: 10px; /* Space between text and logo */
 }
@@ -299,10 +229,17 @@ a:hover {
 }
 
 /* Media Queries */
-/* Small Screens */
+
+/* Extra Small Devices (Phones, 0px and up) */
 @media (max-width: 767px) {
   .hero-logo {
     margin-top: 90px !important; /* Increase this value to move the logo down on mobile devices */
+  }
+
+  .banner-main .jb-logo {
+    max-width: 200px !important; /* Size for smaller screens */
+    width: 100% !important;      /* Ensure it scales correctly */
+    margin-bottom: 1.6rem !important;
   }
 
   .banner-main .title {
@@ -321,26 +258,27 @@ a:hover {
   }
 }
 
-/* Medium Screens */
-@media (max-width: 991px) {
-  .banner-main .jb-logo {
-    max-width: 200px !important;  /* Size for smaller screens */
-    width: 100% !important;       /* Ensure it scales correctly */
-    margin-bottom: -8.6rem !important;
+/* Small Devices (Tablets, 768px and up) */
+@media (min-width: 768px) {
+  .banner-main .title {
+    font-size: 22px;
+    line-height: 32px;
   }
 
   .brand-logo .shortTitle {
-    font-size: 16px !important;
-    line-height: 24px !important;
+    font-size: 18px;
+    line-height: 28px;
   }
 }
 
-/* Large Screens */
+/* Medium Devices (Desktops, 992px and up) */
 @media (min-width: 992px) {
   .banner-main .jb-logo {
-    max-width: 800px !important;  /* Increase max-width for larger screens */
-    width: 100% !important;       /* Ensure it scales correctly */
+    max-width: 800px !important; /* Increase max-width for larger screens */
+    width: 100% !important;      /* Ensure it scales correctly */
     margin-bottom: 1.6rem !important;
+    margin-top: 150px !important; /* Move the logo further down */
+    margin-left: -20px !important; /* Move the logo slightly to the left */
   }
 
   .banner-main .title {
@@ -348,27 +286,42 @@ a:hover {
     line-height: 42px !important;
   }
 
+  .brand-logo {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 800px !important; /* Ensure gap is set */
+    max-width: 2400px !important; /* Ensure max-width is set */
+  }
+
   .brand-logo .shortTitle {
     font-size: 20px !important;
     line-height: 30px !important;
   }
+}
 
-  /* Changes to move the logo down and slightly to the left for larger screens */
-  .hero-logo {
-    margin-top: 150px !important; /* Move the logo further down */
-    margin-left: -20px !important; /* Move the logo slightly to the left */
+/* Large Devices (Large Desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .banner-main .title {
+    font-size: 30px;
+    line-height: 44px;
+  }
+
+  .brand-logo .shortTitle {
+    font-size: 22px;
+    line-height: 32px;
   }
 }
 
+/* Extra Large Devices (Extra Large Desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .banner-main .title {
+    font-size: 32px;
+    line-height: 46px;
+  }
 
-
-.banner-main .shortTitle {
-  font-family: 'AG', sans-serif;
-  font-size: 20px !important;
-  font-weight: 400;
-  line-height: 30px !important;
-  letter-spacing: 0.02em;
-  text-align: center;
+  .brand-logo .shortTitle {
+    font-size: 24px;
+    line-height: 34px;
+  }
 }
 
 
