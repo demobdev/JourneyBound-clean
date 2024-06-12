@@ -232,7 +232,7 @@ a:hover {
 }
 
 .hero-text-wrapper {
-  margin-top: 400px; /* Adjust this value to move the text further down */
+  margin-top: 150px; /* Adjust this value to move the text further up */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -261,7 +261,7 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 800px; /* Increased max-width to space logos further apart */
+  max-width: 1000px; /* Increased max-width to space logos further apart */
 }
 
 .brand-logo .shortTitle {
@@ -337,18 +337,6 @@ a:hover {
   height: 100%;
   overflow: hidden;
 }
-
-.banner-main .shortTitle {
-  font-family: 'AG', sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 0.02em;
-  text-align: center;
-}
-
-
-
 
 .banner-main .shortTitle {
   font-family: 'AG', sans-serif;
