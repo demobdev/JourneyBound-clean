@@ -257,15 +257,14 @@ a:hover {
 }
 
 .brand-logo {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px; /* Adjust the gap as needed */
   width: 100%;
-  max-width: 2000px; /* Increased max-width to space logos further apart */
+  max-width: 1400px; /* Adjust max-width to control the spacing between logos */
 }
 
 .brand-logo .logo-container {
-  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -292,6 +291,7 @@ a:hover {
   .brand-logo {
     flex-direction: column;
     align-items: center;
+    gap: 10px; /* Reduce gap for smaller screens */
   }
 
   .brand-logo .shortTitle {
