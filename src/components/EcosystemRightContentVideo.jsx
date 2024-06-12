@@ -35,9 +35,9 @@ function RightContentVideo() {
                 loop
                 className="bg-video"
                 style={{
-                  width: "88%",
+                  width: "100%",
                   height: "100%",
-                  objectFit: "fill",
+                  objectFit: "cover",
                   opacity: "0.6",
                   minHeight: "552px",
                 }}
@@ -152,3 +152,4 @@ function RightContentVideo() {
 }
 
 export default RightContentVideo;
+
