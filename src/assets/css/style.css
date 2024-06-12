@@ -221,6 +221,7 @@ a:hover {
   z-index: 0;
 }
 
+/* Hero Logo */
 .hero-logo {
   margin-top: 20px;
 }
@@ -231,6 +232,7 @@ a:hover {
   }
 }
 
+/* Hero Text Wrapper */
 .hero-text-wrapper {
   margin-top: 150px; /* Adjust this value to move the text further up */
   display: flex;
@@ -256,10 +258,11 @@ a:hover {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow */
 }
 
+/* Brand Logo */
 .brand-logo {
   display: grid !important;
   grid-template-columns: 1fr 1fr !important;
-  gap: 800px !important; /* Gap between columns */
+  gap: 200px !important; /* Increased gap between columns */
   width: 100% !important;
   max-width: 2400px !important; /* Adjust max-width to control the spacing between logos */
 }
@@ -317,6 +320,7 @@ a:hover {
   }
 }
 
+/* Background Video */
 .banner-main .bg-video {
   filter: opacity(0.6);
   object-fit: cover; /* Ensure the video covers the entire area */
@@ -344,6 +348,7 @@ a:hover {
   height: 100%;
   overflow: hidden;
 }
+
 
 .banner-main .shortTitle {
   font-family: 'AG', sans-serif;
