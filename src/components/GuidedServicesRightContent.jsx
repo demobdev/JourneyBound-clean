@@ -34,7 +34,7 @@ const GuidedServicesRightContent = () => {
               style={{
                 width: "100%",
                 height: "100%",
-                objectFit: "fill",
+                objectFit: "cover",
                 opacity: "0.6",
                 minHeight: "552px",
               }}
