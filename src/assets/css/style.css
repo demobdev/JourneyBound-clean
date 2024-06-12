@@ -203,10 +203,8 @@ a:hover {
 
 /* Banner Styling */
 .banner-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
   min-height: 100vh;
   max-height: 680px;
   background-position: center;
@@ -236,6 +234,9 @@ a:hover {
 
 .hero-text-wrapper {
   margin-top: 125px; /* Adjust this value to move the text further down */
+  display: grid;
+  gap: 10px;
+  justify-items: center;
 }
 
 .banner-main .title {
@@ -255,6 +256,13 @@ a:hover {
   margin-top: 20px;
   color: var(--white); /* Ensure text is visible against the background */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow */
+}
+
+.brand-logo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  justify-items: center;
 }
 
 .brand-logo .shortTitle {
