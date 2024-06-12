@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container, Row, Col, Figure, Image } from "react-bootstrap";
 import BgVideo from "../assets/videos/StarryFungi.mp4";
 import BgImage from "../assets/images/get-started-with-journey-bound.png";
@@ -13,8 +13,37 @@ const contentBackgroundImage = {
 };
 
 function RightContentVideo() {
+  useEffect(() => {
+    const mainContainer = document.querySelector('.main-container');
+    const scrollableContents = document.querySelectorAll('.scrollable-content');
+
+    let lastScrollTop = 0;
+
+    const handleScroll = () => {
+      let scrollTop = mainContainer.scrollTop;
+      let scrollDirection = scrollTop > lastScrollTop ? 'down' : 'up';
+      lastScrollTop = scrollTop;
+
+      scrollableContents.forEach((content) => {
+        let maxScrollTop = content.scrollHeight - content.clientHeight;
+
+        if (scrollDirection === 'down' && content.scrollTop < maxScrollTop) {
+          content.scrollTop += 10; // Adjust the scroll step as needed
+        } else if (scrollDirection === 'up' && content.scrollTop > 0) {
+          content.scrollTop -= 10; // Adjust the scroll step as needed
+        }
+      });
+    };
+
+    mainContainer.addEventListener('scroll', handleScroll);
+
+    return () => {
+      mainContainer.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <>
+    <div className="main-container">
       <section className="ecosystem-right-content-video">
         <Container fluid>
           <Row>
@@ -147,9 +176,10 @@ function RightContentVideo() {
           </Row>
         </Container>
       </section>
-    </>
+    </div>
   );
 }
 
 export default RightContentVideo;
+
 
