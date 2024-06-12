@@ -206,7 +206,6 @@ a:hover {
   display: grid;
   place-items: center;
   min-height: 100vh;
-  max-height: 680px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -214,83 +213,136 @@ a:hover {
   z-index: 0;
 }
 
-.logo-wrapper {
-  position: relative;
-  display: inline-block;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  border-radius: 10px; /* Rounded corners */
-}
-
 .hero-logo {
-  margin-top: 20px; /* Default value */
+  margin-top: 20px;
 }
 
 @media (max-width: 767px) {
   .hero-logo {
-    margin-top: 90px; /* Increase this value to move the logo down on mobile devices */
+    margin-top: 90px;
   }
 }
 
 .hero-text-wrapper {
-  margin-top: 125px; /* Adjust this value to move the text further down */
   display: grid;
   gap: 10px;
   justify-items: center;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .banner-main .title {
-  font-size: 28px;
-  line-height: 42px;
+  font-size: 4vw;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 767px) {
+  .banner-main .title {
+    font-size: 7vw;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .banner-main .title {
+    font-size: 6vw;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .banner-main .title {
+    font-size: 5vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .banner-main .title {
+    font-size: 4vw;
+  }
 }
 
 .jb-logo {
-  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5)); /* Drop shadow */
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
   max-width: 100%;
   height: auto;
 }
 
-.title {
-  margin-top: 20px;
-  color: var(--white); /* Ensure text is visible against the background */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow */
-}
-
-.brand-logo {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  justify-items: center;
-}
-
-.brand-logo .shortTitle {
-  color: var(--white);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow */
-}
-
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .banner-main .jb-logo {
-    max-width: 200px; /* Size for smaller screens */
-    width: 100%; /* Ensure it scales correctly */
-    margin-bottom: 1.6rem;
+    max-width: 60%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .banner-main .jb-logo {
+    max-width: 50%;
   }
 }
 
 @media (min-width: 992px) {
   .banner-main .jb-logo {
-    max-width: 800px; /* Increase max-width for larger screens */
-    width: 100%; /* Ensure it scales correctly */
-    margin-bottom: 1.6rem;
+    max-width: 40%;
   }
 }
 
-.banner-main .bg-video {
-  filter: opacity(0.6);
-  object-fit: cover; /* Ensure the video covers the entire area */
-  width: 100%; /* Ensure the video takes full width */
-  height: 100%; /* Ensure the video takes full height */
+.brand-logo {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 20px;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+.brand-logo .shortTitle {
+  font-family: 'AG', sans-serif;
+  font-size: 3vw;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--white);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 767px) {
+  .brand-logo .shortTitle {
+    font-size: 5vw;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .brand-logo .shortTitle {
+    font-size: 4.5vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .brand-logo .shortTitle {
+    font-size: 3vw;
+  }
+}
+
+.brand-logo .image1, .brand-logo .image2 {
+  width: 20vw;
+}
+
+@media (max-width: 767px) {
+  .brand-logo .image1, .brand-logo .image2 {
+    width: 30vw;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .brand-logo .image1, .brand-logo .image2 {
+    width: 25vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .brand-logo .image1, .brand-logo .image2 {
+    width: 20vw;
+  }
 }
 
 .fullscreen-bg__video {
@@ -303,7 +355,7 @@ a:hover {
   height: 100%;
   transform: translate(-50%, -50%);
   z-index: -1000;
-  object-fit: cover; /* Ensure the video covers the entire area */
+  object-fit: cover;
   overflow: hidden;
 }
 
@@ -313,6 +365,7 @@ a:hover {
   height: 100%;
   overflow: hidden;
 }
+
 
 .banner-main .shortTitle {
   font-family: 'AG', sans-serif;
