@@ -222,7 +222,10 @@ a:hover {
   .banner-main .title {
     font-size: 16px !important; /* Adjust font size for smaller screens */
     line-height: 22px !important; /* Adjust line height for smaller screens */
-    white-space: nowrap; /* Ensure text stays on one line */
+  }
+
+  .break-text {
+    display: block; /* Ensure text breaks at "psychedelic" */
   }
 
   .brand-logo {
@@ -246,6 +249,10 @@ a:hover {
   .banner-main .title {
     font-size: 20px !important;
     line-height: 28px !important;
+  }
+
+  .break-text {
+    display: block; /* Ensure text breaks at "psychedelic" */
   }
 
   .brand-logo .shortTitle {
@@ -273,6 +280,10 @@ a:hover {
     line-height: 42px !important;
   }
 
+  .break-text {
+    display: inline; /* Ensure text stays on one line */
+  }
+
   .brand-logo .shortTitle {
     font-size: 20px !important;
     line-height: 30px !important;
@@ -291,6 +302,10 @@ a:hover {
     line-height: 44px;
   }
 
+  .break-text {
+    display: inline; /* Ensure text stays on one line */
+  }
+
   .brand-logo .shortTitle {
     font-size: 22px;
     line-height: 32px;
@@ -302,6 +317,10 @@ a:hover {
   .banner-main .title {
     font-size: 32px;
     line-height: 46px;
+  }
+
+  .break-text {
+    display: inline; /* Ensure text stays on one line */
   }
 
   .brand-logo .shortTitle {
