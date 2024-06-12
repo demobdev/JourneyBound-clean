@@ -27,13 +27,13 @@ function Banner() {
             a web3 psychedelic experience
           </h1>
           <div className="brand-logo">
-            <div className="text-center">
+            <div className="logo-container text-center">
               <h4 className="shortTitle">on</h4>
               <Figure className="mb-0">
                 <Image src={BaseLogo} className="image1" />
               </Figure>
             </div>
-            <div className="text-center">
+            <div className="logo-container text-center">
               <h4 className="shortTitle">by the</h4>
               <Figure className="mb-0">
                 <Image src={AtriumLogo} className="image2" />
@@ -47,3 +47,4 @@ function Banner() {
 }
 
 export default Banner;
+
