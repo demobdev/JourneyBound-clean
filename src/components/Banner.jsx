@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Figure, Image } from "react-bootstrap";
+import { Container, Figure, Image } from "react-bootstrap";
 import BannerVideo from "../assets/videos/EyeofJourneyBound.mp4";
 import JBWhiteImage from "../assets/images/JB_white.png";
 import BaseLogo from "../assets/images/base-logo.png";
