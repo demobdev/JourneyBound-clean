@@ -227,7 +227,7 @@ a:hover {
 
 @media (max-width: 767px) {
   .hero-logo {
-    margin-top: 90px; /* Increase this value to move the logo down on mobile devices */
+    margin-top: 90px !important; /* Increase this value to move the logo down on mobile devices */
   }
 }
 
@@ -239,8 +239,8 @@ a:hover {
 }
 
 .banner-main .title {
-  font-size: 24px; /* Decreased from 28px */
-  line-height: 36px; /* Decreased from 42px */
+  font-size: 24px !important; /* Decreased from 28px */
+  line-height: 36px !important; /* Decreased from 42px */
   letter-spacing: 0.02em;
   margin-bottom: 20px;
 }
@@ -252,16 +252,16 @@ a:hover {
 }
 
 .title {
-  color: #fff; /* Ensure text is visible against the background */
+  color: #fff !important; /* Ensure text is visible against the background */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow */
 }
 
 .brand-logo {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 80px; /* Gap between columns */
-  width: 100%;
-  max-width: 1400px; /* Adjust max-width to control the spacing between logos */
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 80px !important; /* Gap between columns */
+  width: 100% !important;
+  max-width: 2400px !important; /* Adjust max-width to control the spacing between logos */
 }
 
 .brand-logo .logo-container {
@@ -271,49 +271,49 @@ a:hover {
 }
 
 .brand-logo .shortTitle {
-  color: #fff;
+  color: #fff !important;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow */
   margin-bottom: 10px; /* Space between text and logo */
 }
 
 @media (max-width: 991px) {
   .banner-main .jb-logo {
-    max-width: 200px;  /* Size for smaller screens */
-    width: 100%;       /* Ensure it scales correctly */
-    margin-bottom: 1.6rem;
+    max-width: 200px !important;  /* Size for smaller screens */
+    width: 100% !important;       /* Ensure it scales correctly */
+    margin-bottom: 1.6rem !important;
   }
 
   .banner-main .title {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 20px !important;
+    line-height: 30px !important;
   }
 
   .brand-logo {
-    grid-template-columns: 1fr; /* Stack logos vertically on smaller screens */
-    gap: 10px; /* Reduce gap for smaller screens */
+    grid-template-columns: 1fr !important; /* Stack logos vertically on smaller screens */
+    gap: 10px !important; /* Reduce gap for smaller screens */
   }
 
   .brand-logo .shortTitle {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 16px !important;
+    line-height: 24px !important;
   }
 }
 
 @media (min-width: 992px) {
   .banner-main .jb-logo {
-    max-width: 800px;  /* Increase max-width for larger screens */
-    width: 100%;       /* Ensure it scales correctly */
-    margin-bottom: 1.6rem;
+    max-width: 800px !important;  /* Increase max-width for larger screens */
+    width: 100% !important;       /* Ensure it scales correctly */
+    margin-bottom: 1.6rem !important;
   }
 
   .banner-main .title {
-    font-size: 28px;
-    line-height: 42px;
+    font-size: 28px !important;
+    line-height: 42px !important;
   }
 
   .brand-logo .shortTitle {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 20px !important;
+    line-height: 30px !important;
   }
 }
 
@@ -347,9 +347,9 @@ a:hover {
 
 .banner-main .shortTitle {
   font-family: 'AG', sans-serif;
-  font-size: 20px;
+  font-size: 20px !important;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 30px !important;
   letter-spacing: 0.02em;
   text-align: center;
 }
