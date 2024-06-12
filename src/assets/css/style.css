@@ -137,145 +137,6 @@ a:hover {
   border-radius: 5px;
 }
 
-:root {
-  --white: #FFFFFF;
-  --primary-color: #7D06EE;
-  --black: #000000;
-  --light-white: #D1D1D1;
-}
-
-* {
-  margin: 0px;
-  padding: 0px;
-  font-family: 'Avenir', sans-serif;
-  box-sizing: border-box;
-}
-
-body {
-  scroll-behavior: smooth;
-  background-color: #000000;
-  color: #FFFFFF;
-}
-
-img {
-  max-width: 100%;
-}
-
-a {
-  color: #FFFFFF;
-}
-
-a:hover {
-  color: #FFFFFF;
-}
-
-.container,
-.container-fluid,
-.container-lg,
-.container-md,
-.container-sm,
-.container-xl,
-.container-xxl {
-  padding: 0 16px;
-}
-
-.row {
-  margin-left: -16px;
-  margin-right: -16px;
-}
-
-.row>* {
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
-/* Typography */
-.head-h1 {
-  font-size: 32px;
-  line-height: 40px;
-}
-
-.head-h2 {
-  font-size: 24px;
-  line-height: 34px;
-}
-
-.head-h3 {
-  font-size: 20px;
-  line-height: 28px;
-}
-
-.head-h4 {
-  font-size: 18px;
-  line-height: 28px;
-}
-
-.head-h5 {
-  font-size: 16px;
-  line-height: 26px;
-}
-
-.head-h6 {
-  font-size: 16px;
-  line-height: 26px;
-}
-
-/* Utilities */
-.z-index-0 {
-  z-index: 0;
-}
-
-.z-index-1 {
-  z-index: 1;
-}
-
-.fw-500 {
-  font-weight: 500;
-}
-
-.fw-600 {
-  font-weight: 600;
-}
-
-.purple-color {
-  color: var(--primary-color);
-}
-
-.purple-bg {
-  background-color: var(--primary-color);
-}
-
-.light-white {
-  color: var(--light-white);
-}
-
-.text-list li {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.01em;
-}
-
-.letter-spacing-15 {
-  letter-spacing: 0.15em;
-}
-
-.letter-spacing-1 {
-  letter-spacing: 0.01em;
-}
-
-/* Divider */
-.divider {
-  box-shadow: 0px 0px 19px 2px #7D2CFEF2;
-  width: 100%;
-  height: 3px;
-  max-width: 450px;
-  margin-inline: auto;
-  margin-block: 40px;
-  background: #FFFFFF;
-  border-radius: 5px;
-}
-
 /* Banner Styling */
 .banner-main {
   display: flex;
@@ -345,13 +206,16 @@ a:hover {
 }
 
 /* Media Queries */
-/* Mobile */
+
+/* Mobile (max-width: 767px) */
 @media (max-width: 767px) {
   .hero-logo {
     margin-top: 90px !important; /* Increase this value to move the logo down on mobile devices */
   }
 
   .banner-main .jb-logo {
+    max-width: 400px !important;  /* Ensure logo is the same size across all breakpoints */
+    width: 100% !important;       /* Ensure it scales correctly */
     margin-bottom: 1.6rem !important;
   }
 
@@ -369,10 +233,15 @@ a:hover {
     font-size: 16px !important;
     line-height: 24px !important;
   }
+
+  .brand-logo .image1,
+  .brand-logo .image2 {
+    width: 200px !important; /* Ensure brand logos are the same size across all breakpoints */
+  }
 }
 
-/* Tablet */
-@media (min-width: 768px) {
+/* Tablet (min-width: 768px and max-width: 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
   .banner-main .title {
     font-size: 22px;
     line-height: 32px;
@@ -382,9 +251,14 @@ a:hover {
     font-size: 18px;
     line-height: 28px;
   }
+
+  .brand-logo .image1,
+  .brand-logo .image2 {
+    width: 200px !important; /* Ensure brand logos are the same size across all breakpoints */
+  }
 }
 
-/* Desktop */
+/* Desktop (min-width: 992px) */
 @media (min-width: 992px) {
   .banner-main .jb-logo {
     max-width: 800px !important; /* Increase max-width for larger screens */
@@ -398,19 +272,18 @@ a:hover {
     line-height: 42px !important;
   }
 
-  .brand-logo {
-    grid-template-columns: 1fr 1fr !important;
-    gap: 800px !important; /* Ensure gap is set */
-    max-width: 2400px !important; /* Ensure max-width is set */
-  }
-
   .brand-logo .shortTitle {
     font-size: 20px !important;
     line-height: 30px !important;
   }
+
+  .brand-logo .image1,
+  .brand-logo .image2 {
+    width: 200px !important; /* Ensure brand logos are the same size across all breakpoints */
+  }
 }
 
-/* Large Desktop */
+/* Large Screens (min-width: 1200px) */
 @media (min-width: 1200px) {
   .banner-main .title {
     font-size: 30px;
@@ -423,7 +296,7 @@ a:hover {
   }
 }
 
-/* Extra Large Desktop */
+/* Extra Large Screens (min-width: 1400px) */
 @media (min-width: 1400px) {
   .banner-main .title {
     font-size: 32px;
@@ -463,8 +336,6 @@ a:hover {
   height: 100%;
   overflow: hidden;
 }
-
-
 
 .h3-mobile {
   font-size: 28px;
