@@ -1214,6 +1214,9 @@ z-index: -1;
 
 /* Ecosystem Video Styling */
 .video-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative; /* Ensures the video remains within its container */
   background: linear-gradient(
     179.98deg,
@@ -1223,12 +1226,8 @@ z-index: -1;
 }
 
 .ecosystem-right-content-video .bg-video {
-  position: absolute; /* Changed to absolute to ensure it covers the entire column */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* Center the video */
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover; /* Ensure the video covers the entire area */
   z-index: -1;
 }
@@ -1263,15 +1262,16 @@ z-index: -1;
 
 @media (max-width: 1366px) {
   .ecosystem-right-content-video .bg-video {
-    transform: scaleX(1.2) translate(-50%, -50%);
+    transform: scaleX(1.2);
   }
 }
 
 @media (max-width: 992px) {
   .ecosystem-right-content-video .bg-video {
-    transform: scaleX(1) translate(-50%, -50%);
+    transform: scaleX(1);
   }
 }
+
 
 .image-column {
   max-height: 720px;
