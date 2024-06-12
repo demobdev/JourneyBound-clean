@@ -1,15 +1,51 @@
-import React from "react";
-import { Container, Row, Col, Figure, Image } from "react-bootstrap";
+import React, { useEffect } from "react";
+import { Container, Row, Col, Image, Figure } from "react-bootstrap";
 import BgImage from "../assets/images/experience-the-polygenic.png";
 import ecoSystemContentImage from "../assets/images/polygeic-journey-quest.jpeg";
 
+const contentBackgroundImage = {
+  backgroundImage: `url(${BgImage})`,
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "cover",
+};
+
 function EcosystemLeftContentImage() {
+  useEffect(() => {
+    const mainContainer = document.querySelector('.main-container');
+    const scrollableContents = document.querySelectorAll('.scrollable-content');
+
+    let lastScrollTop = 0;
+
+    const handleScroll = () => {
+      let scrollTop = mainContainer.scrollTop;
+      let scrollDirection = scrollTop > lastScrollTop ? 'down' : 'up';
+      lastScrollTop = scrollTop;
+
+      scrollableContents.forEach((content) => {
+        let maxScrollTop = content.scrollHeight - content.clientHeight;
+
+        if (scrollDirection === 'down' && content.scrollTop < maxScrollTop) {
+          content.scrollTop += 10; // Adjust the scroll step as needed
+        } else if (scrollDirection === 'up' && content.scrollTop > 0) {
+          content.scrollTop -= 10; // Adjust the scroll step as needed
+        }
+      });
+    };
+
+    mainContainer.addEventListener('scroll', handleScroll);
+
+    return () => {
+      mainContainer.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <>
-      <section id="polygeneric" className="">
+    <div className="main-container">
+      <section id="polygeneric">
         <Container fluid>
           <Row className="gx-0">
-            <Col lg={6} className=" scrollable-content">
+            <Col lg={6} className="scrollable-content">
               <div className="polygenic-background-image">
                 <div
                   className="content-wrapper w-100 mx-auto py-4 py-lg-5"
@@ -86,15 +122,14 @@ function EcosystemLeftContentImage() {
               </h6>
             </Col>
             <Col lg={6} className="p-0 image-column overflow-hidden">
-              {/* <Figure className="image mb-0 d-block"> */}
-                <Image src={BgImage} />
-              {/* </Figure> */}
+              <Image src={BgImage} />
             </Col>
           </Row>
         </Container>
       </section>
-    </>
+    </div>
   );
 }
 
 export default EcosystemLeftContentImage;
+
