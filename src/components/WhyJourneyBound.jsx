@@ -1,7 +1,7 @@
 import React from "react";
-import { Container, Row, Col, Figure, Image } from "react-bootstrap";
-import VideoBanner from "../assets/videos/TheOpening.mp4";
 import BackgroundImage from "../assets/images/why-journey-bound.png";
+import { Container } from "react-bootstrap";
+import VideoBanner from "../assets/videos/TheOpening.mp4"; // Assuming the new mp4 file is named TheOpening.mp4
 import { Link } from "react-router-dom";
 import "../assets/css/global-style.css";
 import "../assets/css/style.css";
@@ -15,18 +15,14 @@ function WhyJourneyBound() {
   };
 
   return (
-    <section className="why-journey-bound position-relative overflow-hidden" style={SectionBackgroundImage}>
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        controls={false} // Ensure this is set to false
-        className="fullscreen-bg__video"
-      >
-        <source src={VideoBanner} type="video/mp4" />
-      </video>
-      <Container fluid="lg" className="d-flex flex-column align-items-center justify-content-center text-center">
+    <section className="why-journey-bound text-center py-5" style={SectionBackgroundImage}>
+      <div className="video-container">
+        <video autoPlay loop muted playsInline className="fullscreen-bg__video">
+          <source src={VideoBanner} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <Container fluid="lg">
         <div className="d-flex flex-wrap flex-md-nowrap mb-md-5 mb-4 align-items-end">
           <h4 className="title head-h4 font-family-AG mb-0 fw-normal me-0 me-md-3">Why JourneyBound?</h4>
           <div className="divider d-block d-md-none my-3"></div>
