@@ -1231,9 +1231,9 @@ z-index: -1;
   height: auto;
   object-fit: cover; /* Ensure the video covers the entire area */
   z-index: -1;
-  margin-top: 30px; /* Move the video down */
+  margin-top: 30px; !important /* Move the video down */
 }
-
+!important
 .scrollable-content {
   max-height: 720px;
   overflow: auto;
