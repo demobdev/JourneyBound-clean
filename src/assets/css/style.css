@@ -232,7 +232,7 @@ a:hover {
 }
 
 .banner-main .title {
-  font-size: 3.5vw;  /* Decreased from 4vw */
+  font-size: 1.5vw;  /* Decreased from 4vw */
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 0;
@@ -241,25 +241,25 @@ a:hover {
 
 @media (max-width: 767px) {
   .banner-main .title {
-    font-size: 6vw;  /* Decreased from 7vw */
+    font-size: 4vw;  /* Decreased from 7vw */
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .banner-main .title {
-    font-size: 5vw;  /* Decreased from 6vw */
+    font-size: 3vw;  /* Decreased from 6vw */
   }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .banner-main .title {
-    font-size: 4.5vw;  /* Decreased from 5vw */
+    font-size: 2.5vw;  /* Decreased from 5vw */
   }
 }
 
 @media (min-width: 1200px) {
   .banner-main .title {
-    font-size: 3.5vw;  /* Decreased from 4vw */
+    font-size: 1.5vw;  /* Decreased from 4vw */
   }
 }
 
