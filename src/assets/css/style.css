@@ -227,7 +227,7 @@ a:hover {
 
 @media (max-width: 767px) {
   .hero-logo {
-    margin-top: 150px; /* Increase this value to move the logo down on mobile devices */
+    margin-top: 90px; /* Increase this value to move the logo down on mobile devices */
   }
 }
 
@@ -267,12 +267,14 @@ a:hover {
 .brand-logo .logo-container {
   flex: 1;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .brand-logo .shortTitle {
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow */
+  margin-bottom: 10px; /* Space between text and logo */
 }
 
 @media (max-width: 991px) {
@@ -352,6 +354,7 @@ a:hover {
   letter-spacing: 0.02em;
   text-align: center;
 }
+
 
 .h3-mobile {
   font-size: 28px;
