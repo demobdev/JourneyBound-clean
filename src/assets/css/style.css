@@ -227,7 +227,7 @@ a:hover {
 
 @media (max-width: 767px) {
   .hero-logo {
-    margin-top: 90px; /* Increase this value to move the logo down on mobile devices */
+    margin-top: 150px; /* Increase this value to move the logo down on mobile devices */
   }
 }
 
@@ -261,7 +261,13 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1000px; /* Increased max-width to space logos further apart */
+  max-width: 1400px; /* Increased max-width to space logos further apart */
+}
+
+.brand-logo .logo-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .brand-logo .shortTitle {
