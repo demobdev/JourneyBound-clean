@@ -355,7 +355,7 @@ a:hover {
 
   /* Changes to move the logo down and slightly to the left for larger screens */
   .hero-logo {
-    margin-top: 250px !important; /* Move the logo further down */
+    margin-top: 150px !important; /* Move the logo further down */
     margin-left: -20px !important; /* Move the logo slightly to the left */
   }
 }
