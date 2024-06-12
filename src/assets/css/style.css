@@ -1231,9 +1231,9 @@ z-index: -1;
   height: auto;
   object-fit: cover; /* Ensure the video covers the entire area */
   z-index: -1;
-  margin-top: 30px; !important /* Move the video down */
+  margin-top: 20px !important; /* Move the video down */
 }
-!important
+
 .scrollable-content {
   max-height: 720px;
   overflow: auto;
@@ -1264,18 +1264,15 @@ z-index: -1;
 
 @media (max-width: 1366px) {
   .ecosystem-right-content-video .bg-video {
-    margin-top: 20px; /* Move the video down */
+    margin-top: 20px !important; /* Move the video down */
   }
 }
 
 @media (max-width: 992px) {
   .ecosystem-right-content-video .bg-video {
-    margin-top: 20px; /* Move the video down */
+    margin-top: 20px !important; /* Move the video down */
   }
 }
-
-
-
 
 .image-column {
   max-height: 720px;
