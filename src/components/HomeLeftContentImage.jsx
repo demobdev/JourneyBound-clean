@@ -44,14 +44,14 @@ function HomeLeftContentImage() {
                 </a>
                 <h6
                   className="head-h6 font-family-Avenir fw-normal mb-0"
-                  style={{ marginTop: "10px" }}
+                  style={{ marginTop: "40px" }}
                 >
                   Mint your free JourneyBound Account NFT Now! <br /> 1 PER
                   WALLET ADDRESS
                 </h6>
                 <div className="divider"></div>
                 <h6 className="head-h6 font-family-AG fw-normal mb-0">
-                  Take the First Step Into New
+                  Take the First <br /> Step Into New
                 </h6>
                 <h6 className="head-h6 font-family-AG fw-normal mb-0">
                   Dimensions of Consciousness

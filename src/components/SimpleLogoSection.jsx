@@ -8,7 +8,6 @@ const SimpleLogoSection = () => {
       <Container fluid>
         <div className="rounded text-center p-1 wrapper">
           <Figure className="mb-0">
-            <Image src={LogoImage} />
           </Figure>
         </div>
       </Container>

@@ -17,7 +17,7 @@ function FAQ() {
           <Row className="mb-4 align-items-center">
             <Col lg={6} className="mb-3 mb-lg-0">
               <h2 className="title font-family-ElementalEnd fw-normal text-center mb-0">
-                fAQ
+                FAQ
               </h2>
             </Col>
             <Col lg={6}>
@@ -26,7 +26,7 @@ function FAQ() {
               </h2>
             </Col>
           </Row>
-          <Accordion className="faq-accordion" defaultActiveKey="0">
+          <Accordion className="faq-accordion" defaultActiveKey="">
             <Row>
               <Col lg={6}>
                 <Accordion.Item
@@ -37,29 +37,21 @@ function FAQ() {
                   }}
                   eventKey="0"
                 >
-                  <Accordion.Header
-                    style={{
-                      fontFamily: "Avenir",
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                      whiteSpace: "nowrap",
-                    }}
-                  >
-                    <div style={{ flex: 1, whiteSpace: "normal", wordBreak: "break-word" }}>
+                  <Accordion.Header className="custom-accordion-header">
+                    <div className="question-text">
                       What is JourneyBound?
                     </div>
-                    <div style={{ marginLeft: "auto", fontSize: "24px", fontWeight: "bold", lineHeight: "1" }}>+</div>
+                    <div className="accordion-icon">+</div>
                   </Accordion.Header>
                   <Accordion.Body>
                     An extension of The Atrium, JourneyBound offers a world to
-                    explore token bound account (ERC-6551) functionality that
-                    expands real world and legal medicinal psychedelic access.
+                    explore token-bound account (ERC-6551) functionality that
+                    expands real-world and legal medicinal psychedelic access.
                     JourneyBound consists of the primary and unlimited
                     JourneyBound Account collection, which is offered for free
                     (minus network minting and transfer fees), and continuous
                     sub-integrated bound NFT collections that fuse psychedelic
-                    artwork with in-real life medicinal psychedelic therapy.
+                    artwork with in-real-life medicinal psychedelic therapy.
                   </Accordion.Body>
                 </Accordion.Item>
 
@@ -71,31 +63,23 @@ function FAQ() {
                   }}
                   eventKey="1"
                 >
-                  <Accordion.Header
-                    style={{
-                      fontFamily: "Avenir",
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                      whiteSpace: "nowrap",
-                    }}
-                  >
-                    <div style={{ flex: 1, whiteSpace: "normal", wordBreak: "break-word" }}>
+                  <Accordion.Header className="custom-accordion-header">
+                    <div className="question-text">
                       What are JourneyBound Accounts (NFTs)?
                     </div>
-                    <div style={{ marginLeft: "auto", fontSize: "24px", fontWeight: "bold", lineHeight: "1" }}>+</div>
+                    <div className="accordion-icon">+</div>
                   </Accordion.Header>
                   <Accordion.Body>
-                    JourneyBound Accounts are token bound account enabled
+                    JourneyBound Accounts are token-bound account-enabled
                     (ERC-6551) NFTs that, when minted, provide access to the
-                    psychedelic sub-NFT collection journeys. Limited to 1 (one)
-                    per wallet address, JourneyBound Accounts are wallets, owned
+                    psychedelic sub-NFT collection journeys. Limited to one per
+                    wallet address, JourneyBound Accounts are wallets, owned
                     by your minting/holding wallet, that custody the
                     sub-integrated bound NFT collections. JourneyBound Accounts
                     are access keys and wallet NFTs into the psychedelic
                     exclusive ecosystem. There are unlimited JourneyBound
                     Accounts that are offered for free to provide humanity the
-                    expansive view into this psychedelic token bound universe.
+                    expansive view into this psychedelic token-bound universe.
                     By minting a JourneyBound NFT, you agree to our terms and
                     conditions.
                   </Accordion.Body>
@@ -109,19 +93,11 @@ function FAQ() {
                   }}
                   eventKey="2"
                 >
-                  <Accordion.Header
-                    style={{
-                      fontFamily: "Avenir",
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                      whiteSpace: "nowrap",
-                    }}
-                  >
-                    <div style={{ flex: 1, whiteSpace: "normal", wordBreak: "break-word" }}>
+                  <Accordion.Header className="custom-accordion-header">
+                    <div className="question-text">
                       What is the Polygenic Journey NFT Collection?
                     </div>
-                    <div style={{ marginLeft: "auto", fontSize: "24px", fontWeight: "bold", lineHeight: "1" }}>+</div>
+                    <div className="accordion-icon">+</div>
                   </Accordion.Header>
                   <Accordion.Body>
                     Beginning with the Polygenic Journey NFT collection
@@ -132,13 +108,13 @@ function FAQ() {
                     mint and the collection size is 25,000.
                     <br />
                     <br />
-                    Be in the first 20 to mint or hold all 8 x Polygenic Journey
+                    Be in the first 20 to mint or hold all eight Polygenic Journey
                     NFTs and become eligible to receive a FREE guided
                     psychedelic journey at a licensed psilocybin journey in
                     Portland, Oregon.
                     <br />
                     <br />
-                    Inside the JourneyBound Account, access the 8 x
+                    Inside the JourneyBound Account, access the eight
                     interdimensional realms of the Polygenic Journeys:
                     <ol>
                       <li>Samadhi</li>
@@ -149,7 +125,7 @@ function FAQ() {
                       <li>Sacred Earth</li>
                       <li>Liminality</li>
                       <li>Omniverse</li>
-                    </ol>{" "}
+                    </ol>
                   </Accordion.Body>
                 </Accordion.Item>
 
@@ -161,20 +137,12 @@ function FAQ() {
                   }}
                   eventKey="3"
                 >
-                  <Accordion.Header
-                    style={{
-                      fontFamily: "Avenir",
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                      whiteSpace: "nowrap",
-                    }}
-                  >
-                    <div style={{ flex: 1, whiteSpace: "normal", wordBreak: "break-word" }}>
+                  <Accordion.Header className="custom-accordion-header">
+                    <div className="question-text">
                       Will there be more sub-integrated NFT collections inside
-                      of JourneyBound?
+                      JourneyBound?
                     </div>
-                    <div style={{ marginLeft: "auto", fontSize: "24px", fontWeight: "bold", lineHeight: "1" }}>+</div>
+                    <div className="accordion-icon">+</div>
                   </Accordion.Header>
                   <Accordion.Body>
                     YES! JourneyBound is a systemic token-bound orbital
@@ -194,23 +162,15 @@ function FAQ() {
                   }}
                   eventKey="4"
                 >
-                  <Accordion.Header
-                    style={{
-                      fontFamily: "Avenir",
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                      whiteSpace: "nowrap",
-                    }}
-                  >
-                    <div style={{ flex: 1, whiteSpace: "normal", wordBreak: "break-word" }}>
+                  <Accordion.Header className="custom-accordion-header">
+                    <div className="question-text">
                       Who qualifies to earn a free and legally guided psilocybin
                       journey?
                     </div>
-                    <div style={{ marginLeft: "auto", fontSize: "24px", fontWeight: "bold", lineHeight: "1" }}>+</div>
+                    <div className="accordion-icon">+</div>
                   </Accordion.Header>
                   <Accordion.Body>
-                    The first 20 people who hold all 8 x Polygenic Journey NFT
+                    The first 20 people who hold all eight Polygenic Journey NFT
                     worlds qualify. Make sure you join The Atrium’s Discord
                     server to get the assigned roles based on your holdings.
                   </Accordion.Body>
@@ -224,25 +184,17 @@ function FAQ() {
                   }}
                   eventKey="5"
                 >
-                  <Accordion.Header
-                    style={{
-                      fontFamily: "Avenir",
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                      whiteSpace: "nowrap",
-                    }}
-                  >
-                    <div style={{ flex: 1, whiteSpace: "normal", wordBreak: "break-word" }}>
-                      I hold all 8 x Polygenic Journey NFT worlds! Now what?
+                  <Accordion.Header className="custom-accordion-header">
+                    <div className="question-text">
+                      I hold all eight Polygenic Journey NFT worlds! Now what?
                     </div>
-                    <div style={{ marginLeft: "auto", fontSize: "24px", fontWeight: "bold", lineHeight: "1" }}>+</div>
+                    <div className="accordion-icon">+</div>
                   </Accordion.Header>
                   <Accordion.Body>
-                    Go to The Atrium’s Discord ASAP! Once you hold all 8 x
+                    Go to The Atrium’s Discord ASAP! Once you hold all eight
                     Polygenic Journey NFT worlds, connect your wallet holding
                     the JourneyBound Account to the CollabLand bot and receive
-                    the role of Shaman. If you are in the first 20 x people to
+                    the role of Shaman. If you are in the first 20 people to
                     receive the Shaman role, congratulations! You have received
                     eligibility for a free psilocybin journey at our partner’s
                     licensed service center: Brain Brew PDX in Portland, Oregon.
@@ -259,19 +211,11 @@ function FAQ() {
                   }}
                   eventKey="6"
                 >
-                  <Accordion.Header
-                    style={{
-                      fontFamily: "Avenir",
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                      whiteSpace: "nowrap",
-                    }}
-                  >
-                    <div style={{ flex: 1, whiteSpace: "normal", wordBreak: "break-word" }}>
+                  <Accordion.Header className="custom-accordion-header">
+                    <div className="question-text">
                       How do I trade, transfer, or sell Polygenic Journey NFTs?
                     </div>
-                    <div style={{ marginLeft: "auto", fontSize: "24px", fontWeight: "bold", lineHeight: "1" }}>+</div>
+                    <div className="accordion-icon">+</div>
                   </Accordion.Header>
                   <Accordion.Body>
                     Two ways! Foremost, make sure you're on the Base network.
@@ -305,19 +249,11 @@ function FAQ() {
                   }}
                   eventKey="7"
                 >
-                  <Accordion.Header
-                    style={{
-                      fontFamily: "Avenir",
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                      whiteSpace: "nowrap",
-                    }}
-                  >
-                    <div style={{ flex: 1, whiteSpace: "normal", wordBreak: "break-word" }}>
-                      What Blockchain is JourneyBound on?
+                  <Accordion.Header className="custom-accordion-header">
+                    <div className="question-text">
+                      What blockchain is JourneyBound on?
                     </div>
-                    <div style={{ marginLeft: "auto", fontSize: "24px", fontWeight: "bold", lineHeight: "1" }}>+</div>
+                    <div className="accordion-icon">+</div>
                   </Accordion.Header>
                   <Accordion.Body>
                     Base. Please ensure your wallet is connected to the Base
@@ -334,25 +270,17 @@ function FAQ() {
                   }}
                   eventKey="8"
                 >
-                  <Accordion.Header
-                    style={{
-                      fontFamily: "Avenir",
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                      whiteSpace: "nowrap",
-                    }}
-                  >
-                    <div style={{ flex: 1, whiteSpace: "normal", wordBreak: "break-word" }}>
+                  <Accordion.Header className="custom-accordion-header">
+                    <div className="question-text">
                       What are the limited edition JourneyBound Organics?
                     </div>
-                    <div style={{ marginLeft: "auto", fontSize: "24px", fontWeight: "bold", lineHeight: "1" }}>+</div>
+                    <div className="accordion-icon">+</div>
                   </Accordion.Header>
                   <Accordion.Body>
                     200 of the total JourneyBound Account NFTs are the
                     JourneyBound Organics. If you mint one of these, you will
-                    receive 5 (five) FREE Polygenic Journey NFTs (250 MATIC
-                    value) AND, 5 (five) FREE NFTs per future sub-collection in
+                    receive five FREE Polygenic Journey NFTs (250 MATIC
+                    value) AND, five FREE NFTs per future sub-collection in
                     the JourneyBound ecosystem. Holding a JourneyBound Organic
                     offers a perpetual unique perk of ongoing value.
                   </Accordion.Body>
@@ -366,19 +294,11 @@ function FAQ() {
                   }}
                   eventKey="9"
                 >
-                  <Accordion.Header
-                    style={{
-                      fontFamily: "Avenir",
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                      whiteSpace: "nowrap",
-                    }}
-                  >
-                    <div style={{ flex: 1, whiteSpace: "normal", wordBreak: "break-word" }}>
+                  <Accordion.Header className="custom-accordion-header">
+                    <div className="question-text">
                       Where are the Polygenic Journey NFTs assigned upon mint?
                     </div>
-                    <div style={{ marginLeft: "auto", fontSize: "24px", fontWeight: "bold", lineHeight: "1" }}>+</div>
+                    <div className="accordion-icon">+</div>
                   </Accordion.Header>
                   <Accordion.Body>
                     In your JourneyBound account. JourneyBound accounts are ERC-6551 enabled, meaning these NFTs can also custody assets within the JourneyBound ecosystem.
@@ -394,19 +314,11 @@ function FAQ() {
                   }}
                   eventKey="10"
                 >
-                  <Accordion.Header
-                    style={{
-                      fontFamily: "Avenir",
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                      whiteSpace: "nowrap",
-                    }}
-                  >
-                    <div style={{ flex: 1, whiteSpace: "normal", wordBreak: "break-word" }}>
+                  <Accordion.Header className="custom-accordion-header">
+                    <div className="question-text">
                       Wait, psychedelics are legal? Where does JourneyBound operate?
                     </div>
-                    <div style={{ marginLeft: "auto", fontSize: "24px", fontWeight: "bold", lineHeight: "1" }}>+</div>
+                    <div className="accordion-icon">+</div>
                   </Accordion.Header>
                   <Accordion.Body>
                     Sure are. JourneyBound operates only in the U.S. for now.
@@ -425,19 +337,11 @@ function FAQ() {
                   }}
                   eventKey="11"
                 >
-                  <Accordion.Header
-                    style={{
-                      fontFamily: "Avenir",
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                      whiteSpace: "nowrap",
-                    }}
-                  >
-                    <div style={{ flex: 1, whiteSpace: "normal", wordBreak: "break-word" }}>
+                  <Accordion.Header className="custom-accordion-header">
+                    <div className="question-text">
                       If I hold all rarity NFTs, do I have to participate in a psilocybin journey?
                     </div>
-                    <div style={{ marginLeft: "auto", fontSize: "24px", fontWeight: "bold", lineHeight: "1" }}>+</div>
+                    <div className="accordion-icon">+</div>
                   </Accordion.Header>
                   <Accordion.Body>
                     Absolutely not. Undergoing a psychedelic journey is a
@@ -459,42 +363,18 @@ function FAQ() {
                   }}
                   eventKey="12"
                 >
-                  <Accordion.Header
-                    style={{
-                      fontFamily: "Avenir",
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                      whiteSpace: "nowrap",
-                    }}
-                  >
-                    <div style={{ flex: 1, whiteSpace: "normal", wordBreak: "break-word" }}>
+                  <Accordion.Header className="custom-accordion-header">
+                    <div className="question-text">
                       What Discord roles are available?
                     </div>
-                    <div style={{ marginLeft: "auto", fontSize: "24px", fontWeight: "bold", lineHeight: "1" }}>+</div>
+                    <div className="accordion-icon">+</div>
                   </Accordion.Header>
                   <Accordion.Body>
-                    <ul>
-                      <li> Journeyer (wallet holding the JourneyBound NFT)</li>
-                      <li>
-                        Psychonaut (wallet holding the JourneyBound NFT which
-                        holds 5 of the 8 x Polygenic Journey NFT worlds)
-                      </li>
-                      <li>
-                        Shaman (wallet holding the JourneyBound NFT which holds
-                        all 8 of the 8 x Polygenic Journey NFT worlds)
-                      </li>
-                      <li>
-                        Mystical StarHolder (wallet holding the StarHolder NFT,
-                        the JourneyBound NFT, and 5+ of the 8 x Polygenic
-                        Journey NFT worlds)
-                      </li>
-                      <li>
-                        Master StarHolder (wallet holding the StarHolder NFT,
-                        the JourneyBound NFT, and 8 of the 8 Polygenic Journey
-                        NFT worlds).
-                      </li>
-                    </ul>
+                    <div className="role-item">Journeyer (wallet holding the JourneyBound NFT)</div>
+                    <div className="role-item">Psychonaut (wallet holding the JourneyBound NFT which holds five of the eight Polygenic Journey NFT worlds)</div>
+                    <div className="role-item">Shaman (wallet holding the JourneyBound NFT which holds all eight of the eight Polygenic Journey NFT worlds)</div>
+                    <div className="role-item">Mystical StarHolder (wallet holding the StarHolder NFT, the JourneyBound NFT, and five+ of the eight Polygenic Journey NFT worlds)</div>
+                    <div className="role-item">Master StarHolder (wallet holding the StarHolder NFT, the JourneyBound NFT, and all eight Polygenic Journey NFT worlds).</div>
                   </Accordion.Body>
                 </Accordion.Item>
 
@@ -506,19 +386,11 @@ function FAQ() {
                   }}
                   eventKey="13"
                 >
-                  <Accordion.Header
-                    style={{
-                      fontFamily: "Avenir",
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                      whiteSpace: "nowrap",
-                    }}
-                  >
-                    <div style={{ flex: 1, whiteSpace: "normal", wordBreak: "break-word" }}>
+                  <Accordion.Header className="custom-accordion-header">
+                    <div className="question-text">
                       Can I send other NFTs or tokens to my JourneyBound Account?
                     </div>
-                    <div style={{ marginLeft: "auto", fontSize: "24px", fontWeight: "bold", lineHeight: "1" }}>+</div>
+                    <div className="accordion-icon">+</div>
                   </Accordion.Header>
                   <Accordion.Body>
                     No. JourneyBound will only support functionality from within
@@ -543,3 +415,4 @@ function FAQ() {
 }
 
 export default FAQ;
+

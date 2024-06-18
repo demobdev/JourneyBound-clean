@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import Offcanvas from "react-bootstrap/Offcanvas";
+import jbLogoSlim from "../assets/images/jb-logo-slim.png";
 import "../assets/css/navbar.css";
 
 function Header() {
@@ -10,26 +11,27 @@ function Header() {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  useEffect(()=>{
-    setShow(false)
-  },[location])
 
-  useEffect(()=>{
+  useEffect(() => {
+    setShow(false);
+  }, [location]);
+
+  useEffect(() => {
     window.scrollTo(0, 0);
-  },[location.pathname]);
-  
+  }, [location.pathname]);
+
   return (
     <>
       <Navbar expand="lg">
         <Container fluid="lg">
           <Navbar.Brand className="d-none d-lg-block">
-            <Link to="/" className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}>
-              Home
+            <Link to="/" className={`nav-logo ${location.pathname === '/' ? 'active' : ''}`}>
+              <img src={jbLogoSlim} alt="JB Logo" className="jb-logo-slim" />
             </Link>
           </Navbar.Brand>
           <div className="d-flex align-items-center justify-content-between nav-main-menu w-100">
             <Button className="navbar-toggler" onClick={handleShow}>
-              <i class="fa-solid fa-bars"></i>
+              <i className="fa-solid fa-bars"></i>
             </Button>
             <Navbar.Collapse id="navbar-nav" className="d-none d-lg-flex">
               <Nav className="w-100 justify-content-lg-end">
@@ -51,14 +53,14 @@ function Header() {
               </Nav>
             </Navbar.Collapse>
             <Link to="/mint-now" className="mobile-navlink-btn d-inline-block d-lg-none">
-                Connect Wallet
+              Connect Wallet
             </Link>
           </div>
         </Container>
         <Offcanvas show={show} onHide={handleClose} className="navbar-mobile">
           <Offcanvas.Header closeButton>
           </Offcanvas.Header>
-          <Offcanvas.Body >
+          <Offcanvas.Body>
             <ul className="list-unstyled mb-0">
               <li>
                 <Link to="/" className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}>
