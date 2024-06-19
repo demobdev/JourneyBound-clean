@@ -15,7 +15,7 @@ function Banner() {
         fluid="lg"
         className="d-flex flex-column align-items-center justify-content-center text-center"
       >
-        <Figure className="mb-5">
+        <Figure className="mb-5 jb-logo">
           <Image src={JBWhiteImage} className="image jb-logo" />
         </Figure>
         <h1 className="title font-family-AG">

@@ -223,8 +223,8 @@ a:hover {
   max-width: 1800px;   /* Set max-width for larger screens */
   width: 100%;        /* Ensure it scales correctly */
   margin: 0 auto;     /* Center horizontally */
-  top: -35px;         /* Adjust the value as needed for vertical positioning */
-  left: -25px;        /* Adjust the value as needed for horizontal positioning */
+  top: -30px !important;         /* Adjust the value as needed for vertical positioning */
+  left: -15px !important;        /* Adjust the value as needed for horizontal positioning */
 }
 
 /* Title styling within the banner */
@@ -1087,7 +1087,7 @@ a:hover {
   min-height: 80px;
   max-height: 110px;
   display: flex;
-  justify-content: space-between; /* Center the text horizontally */
+  justify-content: center; /* Center the text horizontally */
   align-items: center; /* Center the text vertically */
 }
 
@@ -1703,32 +1703,4 @@ a:hover {
 
 .highlight-link:hover h6 {
   color: #D7BFFF; /* Neon purple color for hover */
-}
-
-/* Accordion Header Styling */
-.custom-accordion-header {
-  display: flex;
-  justify-content: space-between; /* Aligns the text and icon to the sides */
-  align-items: center;
-  width: 100%;
-  padding: 0 20px; /* Add padding to the sides for spacing */
-}
-
-/* Question text in the accordion header */
-.custom-accordion-header .question-text {
-  flex: 1;
-  text-align: left;
-}
-
-/* Accordion icon styling */
-.custom-accordion-header .accordion-icon {
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 1;
-  margin-left: auto; /* Ensures the icon is at the far right */
-}
-
-/* Remove the ::after pseudo-element to avoid duplication */
-.faq-accordion .accordion-item .accordion-header .accordion-button::after {
-  display: none;
 }
