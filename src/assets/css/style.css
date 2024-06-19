@@ -292,7 +292,7 @@ a:hover {
     margin-bottom: 10px; /* Adjust this value to increase/decrease white space */
   }
   .banner-main .brand-logo {
-    top: 775px !important; /* Adjust for small screens */
+    top: 750px !important; /* Adjust for small screens */
     max-width: 1000px !important; /* Adjust based on your design needs */
   }
   .brand-logo .image1 {
@@ -480,7 +480,7 @@ a:hover {
     font-size: 16px;
   }
   .banner-main .title {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 24px;
     width: 90%; /* Ensure text wraps */
     white-space: normal; /* Allow text to wrap */
