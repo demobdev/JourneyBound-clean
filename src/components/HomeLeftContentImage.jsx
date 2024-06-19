@@ -24,7 +24,7 @@ function HomeLeftContentImage() {
             <Col
               lg={6}
               style={ColumnBGImage}
-              className="py-4 py-md-5 text-center d-flex align-items-center justify-content-center"
+              className="py-5 py-md-5 text-center d-flex align-items-center justify-content-center"
             >
               <div>
                 <div className="mb-4">

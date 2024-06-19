@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container, Row, Col, Figure, Image } from "react-bootstrap";
 import BannerVideo from "../assets/videos/EyeofJourneyBound.mp4";
 import JBWhiteImage from "../assets/images/JB_white.png";
@@ -6,9 +6,34 @@ import BaseLogo from "../assets/images/base-logo.png";
 import AtriumLogo from "../assets/images/Atrium-logo.png";
 
 function Banner() {
+  useEffect(() => {
+    const videoElement = document.querySelector(".fullscreen-bg__video");
+    if (videoElement) {
+      const preventFullscreen = (event) => {
+        event.preventDefault();
+      };
+
+      videoElement.addEventListener("webkitfullscreenchange", preventFullscreen);
+      videoElement.addEventListener("mozfullscreenchange", preventFullscreen);
+      videoElement.addEventListener("fullscreenchange", preventFullscreen);
+
+      return () => {
+        videoElement.removeEventListener("webkitfullscreenchange", preventFullscreen);
+        videoElement.removeEventListener("mozfullscreenchange", preventFullscreen);
+        videoElement.removeEventListener("fullscreenchange", preventFullscreen);
+      };
+    }
+  }, []);
+
   return (
     <section className="banner-main position-relative overflow-hidden">
-      <video autoPlay muted loop className="fullscreen-bg__video">
+      <video
+        autoPlay
+        muted
+        loop
+        className="fullscreen-bg__video"
+        playsInline
+      >
         <source src={BannerVideo} type="video/mp4" />
       </video>
       <Container
