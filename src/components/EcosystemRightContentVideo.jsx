@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Figure, Image, Ratio } from "react-bootstrap";
+import { Container, Row, Col, Figure, Image } from "react-bootstrap";
 import BgVideo from "../assets/videos/StarryFungi.mp4";
 import BgImage from "../assets/images/get-started-with-journey-bound.png";
 import ecoSystemContentImage from "../assets/images/ecosystem-content-image.png";
@@ -24,15 +24,16 @@ function RightContentVideo() {
               className="p-0 overflow-hidden video-column position-relative"
             >
               <h2
-              className="head-h2 fw-normal font-family-AG position-absolute top-0 start-50 translate-middle-x mt-lg-5 mt-4"
-              style={{ zIndex: 2 }}
-            >
-              Ecosystem
-            </h2>
+                className="head-h2 fw-normal font-family-AG position-absolute top-0 start-50 translate-middle-x mt-lg-5 mt-4"
+                style={{ zIndex: 2 }}
+              >
+                Ecosystem
+              </h2>
               <video
                 autoPlay
                 muted
                 loop
+                playsInline
                 className="bg-video"
                 style={{
                   width: "88%",
@@ -40,6 +41,7 @@ function RightContentVideo() {
                   objectFit: "fill",
                   opacity: "0.6",
                   minHeight: "552px",
+                  pointerEvents: "none", // Disable click interactions
                 }}
               >
                 <source src={BgVideo} type="video/mp4" />
