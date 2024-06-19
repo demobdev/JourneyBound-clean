@@ -1,7 +1,7 @@
 import React from "react";
 import BackgroundImage from "../assets/images/why-journey-bound.png";
 import { Container } from "react-bootstrap";
-import VideoBanner from "../assets/videos/TheOpening.mov";
+import VideoBanner from "../assets/videos/TheOpening.mp4";
 import { Link } from "react-router-dom";
 import "../assets/css/global-style.css";
 import "../assets/css/style.css";
@@ -12,12 +12,14 @@ function WhyJourneyBound() {
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
+    position: "relative",
+    zIndex: 2
   };
 
   return (
     <section className="why-journey-bound text-center py-5" style={SectionBackgroundImage}>
       <div className="video-container">
-        <video autoPlay loop muted className="fullscreen-bg__video">
+        <video autoPlay loop muted className="fullscreen-bg__video" style={{ zIndex: -1 }}>
           <source src={VideoBanner} type="video/mp4" />
         </video>
       </div>

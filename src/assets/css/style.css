@@ -232,7 +232,7 @@ a:hover {
   position: absolute; /* Ensure this is absolute to control the exact position */
   top: 750px; /* This can be adjusted for larger screens */
   left: 50%;
-  transform: translateX(-50%); /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center horizontally */
   font-size: 26px;
   line-height: 42px;
   letter-spacing: 0.02em;
@@ -255,7 +255,7 @@ a:hover {
 /* Brand Logo styling within the banner */
 .banner-main .brand-logo {
   position: absolute; /* Position the brand logo absolutely */
-  top: 850px; /* Adjust the value as needed to place it below the shortTitle */
+  top: 820px; /* Adjust the value as needed to place it below the shortTitle */
   left: 50%;
   transform: translateX(-50%); /* Center horizontally */
   display: flex;
@@ -292,39 +292,14 @@ a:hover {
     margin-bottom: 10px; /* Adjust this value to increase/decrease white space */
   }
   .banner-main .brand-logo {
-    top: 825px; /* Adjust for small screens */
-    max-width: 900px !important; /* Adjust based on your design needs */
+    top: 775px !important; /* Adjust for small screens */
+    max-width: 1000px !important; /* Adjust based on your design needs */
   }
   .brand-logo .image1 {
-    width: -120px; /* Adjust for smaller screens */
+    width: 120px; /* Adjust for smaller screens */
   }
   .brand-logo .image2 {
     width: 120px; /* Adjust for smaller screens */
-  }
-  .banner-main .video-container {
-    overflow: hidden !important;
-  }
-  .video-container video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    pointer-events: none;
-  }
-}
-
-@media (max-width: 767px) {
-  .fullscreen-bg__video {
-    object-fit: cover;
-  }
-  .video-container {
-    height: auto;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio */
-    position: relative;
-  }
-  .video-container video {
-    position: absolute;
-    top: 0;
-    left: 0;
   }
 }
 
@@ -346,8 +321,8 @@ a:hover {
     margin-bottom: 10px; /* Adjust this value to increase/decrease white space */
   }
   .banner-main .brand-logo {
-    top: 825px; /* Adjust for medium screens */
-    min-width: 1000px !important; /* Adjust based on your design needs */
+    top: 725px; /* Adjust for medium screens */
+    min-width: 1400px !important; /* Adjust based on your design needs */
   }
   .brand-logo .image1 {
     width: 150px; /* Adjust for medium screens */
@@ -374,8 +349,8 @@ a:hover {
     margin-bottom: 10px; /* Adjust this value to increase/decrease white space */
   }
   .banner-main .brand-logo {
-    top: 825px; /* Adjust for larger screens */
-    min-width: 1600px !important; /* Adjust based on your design needs */
+    top: 715px; /* Adjust for larger screens */
+    min-width: 1700px !important; /* Adjust based on your design needs */
   }
   .brand-logo .image1 {
     width: 170px; /* Adjust for larger screens */
@@ -402,8 +377,8 @@ a:hover {
     margin-bottom: 10px; /* Adjust this value to increase/decrease white space */
   }
   .banner-main .brand-logo {
-    top: 825px; /* Adjust for larger screens */
-    min-width: 1800px !important; /* Adjust based on your design needs */
+    top: 725px; /* Adjust for larger screens */
+    min-width: 2000px !important; /* Adjust based on your design needs */
   }
   .brand-logo .image1 {
     width: 190px; /* Adjust for larger screens */
@@ -430,7 +405,7 @@ a:hover {
     margin-bottom: 10px; /* Adjust this value to increase/decrease white space */
   }
   .banner-main .brand-logo {
-    top: 825px; /* Adjust for very large screens */
+    top: 725px; /* Adjust for very large screens */
     min-width: 1800px !important; /* Adjust based on your design needs */
   }
   .brand-logo .image1 {
@@ -917,8 +892,12 @@ a:hover {
 
 /* Mobile Media Query */
 .homeLeftContentImage .subTitle {
-  letter-spacing: 0.57em;
+  letter-spacing: 0.67em;
+  padding-bottom:0.5rem;
 }
+
+
+
 
 .homeLeftContentImage .image {
   position: relative;
@@ -956,7 +935,7 @@ a:hover {
 
 .btn.free-mint-btn {
   font-family: Banshee Pilot;
-  font-size: 35px;
+  font-size: 32px !important;
   line-height: 34px;
   letter-spacing: 0.15em;
   color: #ffffff;
@@ -1466,226 +1445,6 @@ a:hover {
   .bg-image-atristry {
     background-size: contain;
   }
-}
-
-.faq-section .title {
-  font-size: 94px;
-  font-weight: 400;
-  line-height: 115px;
-  letter-spacing: 0.43em;
-}
-
-.faq-accordion .accordion-item {
-  background: #ffffff0d;
-  border: 0;
-  border-radius: 18px;
-  position: relative;
-  z-index: 0;
-}
-
-.faq-accordion .accordion-item .accordion-header .accordion-button {
-  font-family: "Avenir";
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 23px;
-  letter-spacing: 0.11em;
-  color: #ffffff;
-  border-radius: 0;
-  background: none;
-  padding: 20px 22px;
-  outline: 0;
-  box-shadow: none;
-  border: 0;
-  text-transform: uppercase;
-  min-height: 80px;
-  max-height: 110px;
-  display: flex;
-  justify-content: space-between; /* Adjusted to space-between for alignment */
-  align-items: center; /* Center the text vertically */
-  text-align: left; /* Ensure text aligns left */
-}
-
-.faq-accordion .accordion-item .accordion-header .accordion-button::after {
-  content: "+";
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 1;
-  margin-left: auto;
-  align-self: center; /* Center the "+" vertically */
-}
-
-.faq-accordion .accordion-item .accordion-body {
-  padding: 20px;
-  padding-top: 0;
-}
-
-.simple-brew-section {
-  height: 100vh;
-  background-image: url('../images/join-our-shared-bg.png');
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-size: 160% 60%;
-  padding-block: 62px;
-  background-color: black;
-}
-
-.simple-brew-section .title {
-  font-size: 26px;
-  line-height: 46px;
-}
-
-.faq-accordion .accordion-item::before {
-  top: -5px;
-}
-
-.faq-accordion .accordion-item::after {
-  bottom: -5px;
-}
-
-.accordion-header .accordion-button {
-  display: flex;
-  justify-content: space-between; /* Adjusted to space-between for alignment */
-  align-items: center; /* Adjusted to center */
-}
-
-.mobile-spacer {
-  flex: 1;
-}
-
-.accordion-header .accordion-button .spacer {
-  flex-grow: 1;
-}
-
-.accordion-header .accordion-button > div {
-  font-size: 1.2rem;
-  text-align: left; /* Ensure text aligns left */
-}
-
-.accordion-header .accordion-button > div:nth-of-type(3) {
-  align-self: center; /* Center the "+" vertically */
-  font-size: 12px;
-  font-weight: bold;
-}
-
-@media (min-width: 768px) {
-  .simple-brew-section {
-    height: 100vh;
-    padding: 100px;
-    background-image: url('../images/join-our-shared-bg.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 45%;
-    padding-block: 62px;
-    background-color: black;
-  }
-
-  .mobile-spacer {
-    flex: 0;
-  }
-
-  .web-spacer {
-    flex: 1;
-  }
-
-  .accordion-header .accordion-button > div {
-    padding: 0 10px;
-    font-size: 0.9rem;
-    text-align: left; /* Ensure text aligns left */
-  }
-
-  .accordion-header .accordion-button > div:nth-of-type(3) {
-    align-self: center; /* Center the "+" vertically */
-    font-weight: bold;
-    font-size: 1rem;
-  }
-
-  .faq-accordion .accordion-item .accordion-header .accordion-button {
-    font-family: "Avenir";
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 23px;
-    letter-spacing: 0.11em;
-    color: #ffffff;
-    border-radius: 0;
-    background: none;
-    padding: 20px 22px;
-    outline: 0;
-    box-shadow: none;
-    border: 0;
-    text-transform: uppercase;
-    height: 90px;
-    display: flex;
-    justify-content: space-between; /* Adjusted to space-between for alignment */
-    align-items: center; /* Adjusted to center */
-  }
-}
-
-@media (min-width: 1024px) and (max-width: 1440px) {
-  #polygeneric .no-gutter {
-    margin-right: 0;
-    margin-left: 0;
-  }
-
-  #polygeneric .row > * {
-    padding-right: 0;
-    padding-left: 0;
-  }
-}
-
-.bg-image-atristry {
-  width: 100%;
-  height: 100vh; /* Adjust height as needed */
-  background-image: url('../images/Moonizen.png');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* Adjust for mobile screens */
-@media (max-width: 767px) {
-  .guided-service-bg {
-    background-size: contain;
-  }
-  .brainbrewpdx {
-    margin-top: 1rem;
-  }
-}
-
-.guided-service-bg {
-  width: 100%;
-  height: 100vh; /* Adjust height as needed */
-  background-image: url('../images/triangle-down-bg-image.png');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* Adjust for mobile screens */
-@media (max-width: 767px) {
-  .bg-image-atristry {
-    background-size: contain;
-  }
-}
-
-.guided-service-bg {
-  width: 100%;
-  height: 100vh; /* Adjust height as needed */
-  background-image: url('../images/triangle-down-bg-image.png');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-@media (max-width: 767px) {
-  .bg-image-atristry {
-    background-size: contain;
-  }
-}
-
-.accordion-header .accordion-button > div:nth-of-type(3) {
-  align-self: center;
-  font-size: 12px;
-  font-weight: bold;
 }
 
 .highlight-link h6 {
